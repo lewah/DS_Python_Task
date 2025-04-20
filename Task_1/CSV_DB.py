@@ -1,7 +1,4 @@
-import os
-import sqlite3
 import pandas as pd
-import sqlalchemy
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import OperationalError, SQLAlchemyError
 
@@ -166,4 +163,3 @@ class DatasetManager(DatabaseManager): #correct name for class
             print(f"An unexpected error occurred: {e}")
         
         # self.csv_to_table(self.csv_file, self.table_name)
-

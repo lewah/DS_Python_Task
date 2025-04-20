@@ -1,7 +1,5 @@
-import os
 import cProfile # Profiling
 import sqlite3
-import sqlalchemy
 from pathlib import Path
 from sqlalchemy import create_engine, text,select
 from sqlalchemy.exc import OperationalError, SQLAlchemyError
@@ -10,7 +8,7 @@ from mapping import DataHandling,FunctionSelection,TestDataMapper
 from visualization import load_data,create_best_fit_visualization,create_mapped_data_visualization
 
 # for unittest
-BASE_DIR = Path('/Users/ingrida.l/Desktop/MS-DS/Q1/Programing_with_python/Assignment/Task_1')
+BASE_DIR = Path('/Task_1')
 # # BASE_DIR = Path(__file__).parent  # This makes it relative to the script location for Unittest
 DATA_DIR = BASE_DIR / 'dataset_1'
 

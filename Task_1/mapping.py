@@ -56,7 +56,6 @@ class DataHandling:
         # what is returned here is ['y1', 'y2', 'y3', 'y4']
         return [col for col in data.columns if col.startswith(prefix)]
 
-
 class FunctionSelection(DataHandling):
     """
     A class to select the best-fit ideal functions using the least squares method.
@@ -249,7 +248,3 @@ class TestDataMapper(FunctionSelection):
         """
         df.to_sql(table_name, self.engine, if_exists="replace", index=False)
         print(f"Data saved to table: {table_name}")
-
-
-
-
