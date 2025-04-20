@@ -143,4 +143,3 @@ def create_mapped_data_visualization(training_df, ideal_df, mapped_data):
 
     # Show plot (opens in browser)
     show(p)
-
